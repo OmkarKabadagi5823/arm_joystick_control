@@ -13,6 +13,10 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
+catkin_package(
+  
+)
+
 add_executable(arm_joystick_control src/arm_joystick_control.cpp)
 target_link_libraries(arm_joystick_control ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 install(TARGETS arm_joystick_control DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
